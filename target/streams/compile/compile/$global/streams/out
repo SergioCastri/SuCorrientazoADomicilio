@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazoadomicilio/servicios/ServicioInstruccion.scala:21:8: object creation impossible, since method recorrerEntrega in trait algebraHacerEntrega of type (mov: co.com.corrientazoadomicilio.entidades.Movimiento)co.com.corrientazoadomicilio.entidades.Posicion is not defined[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazoadomicilio/servicios/ServicioDron.scala:52:8: object creation impossible, since method seguirEntrega in trait algebraHacerEntrega of type (entrega: String, dron: co.com.corrientazoadomicilio.entidades.Dron)scala.concurrent.Future[co.com.corrientazoadomicilio.entidades.Dron] is not defined[0m
+[0m[[0m[31merror[0m] [0m[0m(Note that String does not match co.com.corrientazoadomicilio.vo.Entrega)[0m
 [0m[[0m[31merror[0m] [0m[0mobject interpreteHacerEntrega extends interpreteHacerEntrega[0m
 [0m[[0m[31merror[0m] [0m[0m       ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

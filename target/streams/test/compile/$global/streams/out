@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/test/scala/co/com/corrientazoadomicilio/test/testSuite.scala:44:48: value recorrerEntrega is not a member of object co.com.corrientazoadomicilio.servicios.interpreteHacerEntrega[0m
-[0m[[0m[31merror[0m] [0m[0m    val res: Posicion = interpreteHacerEntrega.recorrerEntrega(Movimiento(posicion, ins))[0m
-[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 7 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
