@@ -16,7 +16,7 @@ sealed trait algebraHacerEntrega{
 }
 
 sealed trait interpreteHacerEntrega extends algebraHacerEntrega{
-  implicit val context = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(3))
+  implicit val context = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(1))
 
   def recorrerPorInstruccion(dron:Dron, instruccion: Instruccion): Future[Dron] = {
     val res: Future[Dron] = instruccion match{
@@ -44,19 +44,9 @@ sealed trait interpreteHacerEntrega extends algebraHacerEntrega{
     val res: List[Future[Dron]] = ruta.ruta.foldLeft(lfuturos){(resultado,item) =>
       resultado :+ resultado.last.flatMap(x => seguirEntrega(item, x))
     }
-    res
+    res.tail
   }
 
-/*
-  def seguirRuta(listaEntregas : List[String]) : List[Future[Posicion]]={
-    // val lista: List[List[Char]] = listaEntregas.map(x=> x.toList)
-    val posicionInicial = Posicion(Coordenada(0,0), Cardinalidad.nuevaCardinalidad('N'))
-    val primeraIteracion = seguirEntrega(listaEntregas.head, posicionInicial)
-    val res: List[Posicion] = listaEntregas.tail.map(x=>seguirEntrega(x, primeraIteracion)) // no me devuleve la primera
-    res
-  } */
-
-  //def seguirRuta()
 }
 
 object interpreteHacerEntrega extends interpreteHacerEntrega
@@ -76,7 +66,7 @@ sealed trait algebraSeguirRuta{
 
 sealed trait interpreteDeAlgebraSeguirRuta extends algebraSeguirRuta{
 
-  implicit val context = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(3))
+  implicit val context = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(1))
 
    def moverDerecha(dron: Dron): Future[Dron] = {
      val md = Future {
