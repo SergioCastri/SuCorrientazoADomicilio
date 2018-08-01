@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazoadomicilio/servicios/ServicioArchivo.scala:29:52: Cannot find an implicit ExecutionContext. You might pass[0m
-[0m[[0m[31merror[0m] [0m[0man (implicit ec: ExecutionContext) parameter to your method[0m
-[0m[[0m[31merror[0m] [0m[0mor import scala.concurrent.ExecutionContext.Implicits.global.[0m
-[0m[[0m[31merror[0m] [0m[0m    val res2: Future[List[Dron]]  = Future.sequence(res)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazoadomicilio/Main.scala:11:47: value leerArchivo is not a member of object co.com.corrientazoadomicilio.servicios.InterpreteAlgebraArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    val ruta: Ruta = InterpreteAlgebraArchivo.leerArchivo("prueba.txt")[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

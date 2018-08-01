@@ -3,16 +3,18 @@ package co.com.corrientazoadomicilio.servicios
 import java.util.concurrent.Executors
 
 import co.com.corrientazoadomicilio.entidades.Dron
+import co.com.corrientazoadomicilio.vo.Cardinalidad.{E, N, O, S}
 import co.com.corrientazoadomicilio.vo._
 
 import scala.concurrent.{ExecutionContext, Future}
+import scala.util.Try
 
 
 
 sealed trait algebraHacerEntrega{
   def recorrerPorInstruccion(dron:Dron, instruccion: Instruccion): Future[Dron]
   def seguirEntrega(entrega :Entrega, dron: Dron):Future[Dron]
-  //def seguirRuta(listaEntregas : List[String]) : List[Future[Posicion]]
+  def seguirRuta(ruta :Ruta, dron: Dron):List[Future[Dron]]
 }
 
 sealed trait interpreteHacerEntrega extends algebraHacerEntrega{

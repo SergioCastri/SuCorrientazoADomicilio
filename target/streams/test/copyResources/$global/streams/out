@@ -1,2 +1,3 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/s4n/Documents/corrientazo-domicilio/src/test/resources/prueba.txt,/home/s4n/Documents/corrientazo-domicilio/target/scala-2.12/test-classes/prueba.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/s4n/Documents/corrientazo-domicilio/src/test/resources/in1.txt,/home/s4n/Documents/corrientazo-domicilio/target/scala-2.12/test-classes/in1.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/s4n/Documents/corrientazo-domicilio/src/test/resources/in2.txt,/home/s4n/Documents/corrientazo-domicilio/target/scala-2.12/test-classes/in2.txt)[0m

@@ -8,8 +8,8 @@ import scala.concurrent.Future
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val ruta: Ruta = InterpreteAlgebraArchivo.leerArchivo("prueba.txt")
-    val res: Future[List[Posicion]] = InterpreteAlgebraArchivo.escribirArchivo(ruta)
+    //val ruta: Ruta = InterpreteAlgebraArchivo.leerArchivo("prueba.txt")
+   // val res: Future[List[Posicion]] = InterpreteAlgebraArchivo.escribirArchivo(ruta)
 
   }
 

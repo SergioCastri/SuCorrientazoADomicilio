@@ -4,5 +4,8 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse hacia adelante[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe moverse dependiendo de la intruccion[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe moverse dependiendo de la intruccion 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- debe ocurrir un failure si la instruccion es incorrecta[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Un dron debe hacer toda una entrega[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe hacer todo el recorrido[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Un dron debe hacer toda una entrega y si el archivo tiene caracteres malos, descarta dichos caracteres[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe hacer todo el recorrido con archivo perfecto[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe hacer todo el recorrido con archivo no perfecto[0m[0m
