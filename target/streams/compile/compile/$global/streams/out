@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazoadomicilio/Main.scala:11:47: value leerArchivo is not a member of object co.com.corrientazoadomicilio.servicios.InterpreteAlgebraArchivo[0m
-[0m[[0m[31merror[0m] [0m[0m    val ruta: Ruta = InterpreteAlgebraArchivo.leerArchivo("prueba.txt")[0m
-[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazoadomicilio/servicios/ServicioArchivo.scala:55:5: a pure expression does nothing in statement position; multiline expressions might require enclosing parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m    retorno[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
