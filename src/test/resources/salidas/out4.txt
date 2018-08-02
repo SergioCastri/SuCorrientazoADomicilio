@@ -1,0 +1,4 @@
+Success(Posicion(Coordenada(0,2),S()))
+Success(Posicion(Coordenada(-1,1),O()))
+Success(Posicion(Coordenada(-3,1),N()))
+Success(Posicion(Coordenada(-2,2),E()))

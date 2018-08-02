@@ -8,3 +8,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- Un dron debe hacer toda una entrega[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Un dron debe hacer toda una entrega y si el archivo tiene caracteres malos, descarta dichos caracteres[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe hacer todo el recorrido con archivo perfecto[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe hacer todo el recorrido con archivo no perfecto[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- no se debe crear un dron si se sale de la coordenada[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- se debe retornar la posicion final de las entregas sin  salirse de la grilla[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- el programa debe leer un archivo y convertirlo a ruta[0m[0m
