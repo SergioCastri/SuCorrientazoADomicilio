@@ -7,3 +7,4 @@ exit
 testOnly co.com.corrientazoadomicilio.test.testSuite
 exit
 testOnly co.com.corrientazoadomicilio.test.testSuite
+exit
