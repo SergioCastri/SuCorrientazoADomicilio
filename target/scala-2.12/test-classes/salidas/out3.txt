@@ -1,3 +1,2 @@
-Success(Posicion(Coordenada(0,2),N()))
-Failure(java.lang.Exception: EL DRON NO SE PUEDE CREAR EN ESTA COORDENADA)
-Failure(java.lang.Exception: EL DRON NO SE PUEDE CREAR EN ESTA COORDENADA)
+== Reporte de entregas ==
+(0, 2) direccion Norte

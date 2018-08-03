@@ -1,14 +1,19 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mtestSuite:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la derecha[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la izquierda[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse hacia adelante[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe moverse dependiendo de la intruccion[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe moverse dependiendo de la intruccion 2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- debe ocurrir un failure si la instruccion es incorrecta[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Un dron debe hacer toda una entrega[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Un dron debe hacer toda una entrega y si el archivo tiene caracteres malos, descarta dichos caracteres[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la derecha desde el Norte[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la izquierda desde el norte[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse hacia adelante desde el norte[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la derecha desde el sur[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la izquierda desde el sur[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse hacia adelante desde el sur[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la derecha desde el oeste[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la izquierda desde el oeste[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse hacia adelante desde el oeste[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la derecha desde el este[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse a la izquierda desde el este[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El dron puede moverse hacia adelante desde el este[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe hacer todo el recorrido con archivo perfecto[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- un dron debe hacer todo el recorrido con archivo no perfecto[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- no se debe crear un dron si se sale de la coordenada[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- se debe retornar la posicion final de las entregas sin  salirse de la grilla[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- el programa debe leer un archivo y convertirlo a ruta[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EL PROGRAMA DEBE EJECUTAR ADECUDAMENTE CUALQUEIR CANTIDAD DE ARCHIVOS[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- El programa debe leer archivos vacios y no sacar error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- si un archivo viene sin instrcciones se genera un reporte vacio[0m[0m

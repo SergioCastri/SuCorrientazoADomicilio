@@ -1,10 +1,11 @@
-Success(Posicion(Coordenada(-2,4),N()))
-Success(Posicion(Coordenada(-1,3),S()))
-Success(Posicion(Coordenada(0,0),O()))
-Success(Posicion(Coordenada(-4,1),O()))
-Success(Posicion(Coordenada(-5,2),S()))
-Success(Posicion(Coordenada(-5,-1),O()))
-Success(Posicion(Coordenada(-7,-1),E()))
-Success(Posicion(Coordenada(-7,-3),E()))
-Success(Posicion(Coordenada(-7,-2),N()))
-Success(Posicion(Coordenada(-5,2),N()))
+== Reporte de entregas ==
+(-2, 4) direccion Norte
+(-1, 3) direccion sur
+(0, 0) direccion Oeste
+(-4, 1) direccion Oeste
+(-5, 2) direccion sur
+(-5, -1) direccion Oeste
+(-7, -1) direccion Este
+(-7, -3) direccion Este
+(-7, -2) direccion Norte
+(-5, 2) direccion Norte

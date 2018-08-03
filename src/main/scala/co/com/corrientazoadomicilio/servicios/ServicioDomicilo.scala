@@ -1,3 +1,50 @@
+package co.com.corrientazoadomicilio.servicios
+import co.com.corrientazoadomicilio.entidades.Dron
+import co.com.corrientazoadomicilio.vo._
+
+import scala.util.Try
+
+
+
+sealed trait algebraHacerDomicilio{
+  protected def recorrerPorInstruccion(dron:Dron, instruccion: Instruccion): Try[Dron]
+  protected def seguirEntrega(entrega :Entrega, dron: Dron):Try[Dron]
+  def seguirRuta(ruta :Ruta, dron: Dron):List[Try[Dron]]
+}
+
+sealed trait interpreteHacerDomicilio extends algebraHacerDomicilio{
+
+   protected def recorrerPorInstruccion(dron:Dron, instruccion: Instruccion): Try[Dron] = {
+    val res = instruccion match{
+      case  A() => interpreteMovimientoDron.avanzar(dron)
+      case  D() => interpreteMovimientoDron.moverDerecha(dron)
+      case  I() => interpreteMovimientoDron.moverIzquierda(dron)
+    }
+    res
+  }
+
+   protected def seguirEntrega(entrega :Entrega, dron: Dron):Try[Dron]= {
+    val lfuturos: List[Try[Dron]] = List(Try(dron))
+    val r: List[Try[Dron]] = entrega.entrega.foldLeft(lfuturos){ (resultado, item) =>
+      resultado :+ resultado.last.flatMap(x => recorrerPorInstruccion(x, item))
+    }
+    val dronFinal = r.last
+    dronFinal
+  }
+
+
+  def seguirRuta(ruta :Ruta, dron: Dron):List[Try[Dron]]= {
+    val lfuturos: List[Try[Dron]] = List(Try(dron))
+    val res = ruta.ruta.foldLeft(lfuturos){(resultado,item) =>
+      resultado :+ resultado.last.flatMap(x => seguirEntrega(item, x))
+    }
+    res.tail
+  }
+}
+
+object interpreteHacerDomicilio extends interpreteHacerDomicilio
+
+
 /*
 package co.com.corrientazoadomicilio.servicios
 
@@ -226,51 +273,6 @@ sealed trait interpreteDeAlgebraSeguirRuta extends algebraSeguirRuta{
 }
 
 object interpreteDeAlgebraSeguirRuta extends interpreteDeAlgebraSeguirRuta  */
-package co.com.corrientazoadomicilio.servicios
-import co.com.corrientazoadomicilio.entidades.Dron
-import co.com.corrientazoadomicilio.vo._
-
-import scala.util.Try
-
-
-
-sealed trait algebraHacerDomicilio{
-  def recorrerPorInstruccion(dron:Dron, instruccion: Instruccion): Try[Dron]
-  def seguirEntrega(entrega :Entrega, dron: Dron):Try[Dron]
-  def seguirRuta(ruta :Ruta, dron: Dron):List[Try[Dron]]
-}
-
-sealed trait interpreteHacerDomicilio extends algebraHacerDomicilio{
-
-  def recorrerPorInstruccion(dron:Dron, instruccion: Instruccion): Try[Dron] = {
-    val res = instruccion match{
-      case  A() => interpreteMovimientoDron.avanzar(dron)
-      case  D() => interpreteMovimientoDron.moverDerecha(dron)
-      case  I() => interpreteMovimientoDron.moverIzquierda(dron)
-    }
-    res
-  }
-
-  def seguirEntrega(entrega :Entrega, dron: Dron):Try[Dron]= {
-    val lfuturos: List[Try[Dron]] = List(Try(dron))
-    val r: List[Try[Dron]] = entrega.entrega.foldLeft(lfuturos){ (resultado, item) =>
-      resultado :+ resultado.last.flatMap(x => recorrerPorInstruccion(x, item))
-    }
-    val dronFinal = r.last
-    dronFinal
-  }
-
-
-  def seguirRuta(ruta :Ruta, dron: Dron):List[Try[Dron]]= {
-    val lfuturos: List[Try[Dron]] = List(Try(dron))
-    val res = ruta.ruta.foldLeft(lfuturos){(resultado,item) =>
-      resultado :+ resultado.last.flatMap(x => seguirEntrega(item, x))
-    }
-    res.tail
-  }
-}
-
-object interpreteHacerDomicilio extends interpreteHacerDomicilio
 
 
 
